@@ -1,0 +1,9 @@
+<h2>{{ album_name }}</h2>
+<div class="gallery">
+  {% for image, description in images %}
+  <div class="card">
+    <img src="{{ image }}" alt="{{ description }}">
+    <p>{{ description }}</p>
+  </div>
+  {% endfor %}
+</div>
